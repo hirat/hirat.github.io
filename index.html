@@ -80,6 +80,62 @@
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-find" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/12/find/">通过find快速查找字符串</a>
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2020/03/12/find/" class="article-date"><time datetime="2020-03-12T09:29:50.000Z" itemprop="datePublished">2020-03-12</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经常上 <a href="https://github.com/hirat/iOS-Runtime-Headers" target="_blank" rel="noopener">iOS-Runtime-Headers</a> 看看私有API，有没有什么比较有意思的玩法，以前都是傻乎乎的一个个头文件去看。其实可以通过find来查找的。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name <span class="string">"*.h"</span> -print0 | xargs -0 grep <span class="string">"allInstalledApplications"</span></span><br></pre></td></tr></table></figure>
+
+<p>结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;PrivateFrameworks&#x2F;FrontBoard.framework&#x2F;FBApplicationLibrary.h:- (id)allInstalledApplications;</span><br><span class="line">.&#x2F;Frameworks&#x2F;CoreServices.framework&#x2F;LSApplicationWorkspace.h:- (id)allInstalledApplications;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://hirat.online/2020/03/12/find/" data-id="ck7ok0kbf0000lus739ofd03w" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Authenticating-with-the-App-Store" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -163,7 +219,7 @@
   
   <div class="sidebar-module">
     <h4>Archives</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2020/03/">March 2020</a><span class="sidebar-module-list-count">1</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2020/03/">March 2020</a><span class="sidebar-module-list-count">2</span></li></ul>
   </div>
 
 
@@ -172,6 +228,10 @@
   <div class="sidebar-module">
     <h4>Recents</h4>
     <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2020/03/12/find/">通过find快速查找字符串</a>
+        </li>
       
         <li>
           <a href="/2020/03/09/Authenticating-with-the-App-Store/">解决上传App Store一直卡住的问题</a>
